@@ -342,8 +342,10 @@ LRESULT CALLBACK DrawpadMsgCallback(HWND hWnd, UINT msg, WPARAM wParam, LPARAM l
 
 	// Host 启动前仍由默认 WndProc 接管，避免向尚未附着的控制器发送消息。
 	// SDK 的 tablet 常量在部分 ARM64 SDK 组合中未导出，使用文档固定值保持兼容。
+	// 与 Draw3.WindowControl 的 kTabletInputFlags 保持一致：不含 TABLET_DISABLE_TOUCHUIFORCEOFF，
+	// 批注期间的系统触摸指针保持可见。
 	if (msg == 0x02CCu)
 		return 0x00000001u | 0x00000008u | 0x00000100u |
-			0x00000200u | 0x00010000u;
+			0x00000200u;
 	return DefWindowProcW(hWnd, msg, wParam, lParam);
 }

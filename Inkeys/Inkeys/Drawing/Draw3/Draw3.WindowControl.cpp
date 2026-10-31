@@ -45,8 +45,7 @@ namespace Inkeys::Drawing::Draw3
 			TABLET_DISABLE_PRESSANDHOLD |
 			TABLET_DISABLE_PENTAPFEEDBACK |
 			TABLET_DISABLE_PENBARRELFEEDBACK |
-			// 在首个接触前固定关闭系统 Touch UI；不影响 RTS 逐触点橡皮。
-			TABLET_DISABLE_TOUCHUIFORCEOFF |
+			// 批注期间保留系统触摸指针，用户可看到落点；其余系统触摸反馈仍关闭，不影响 RTS 逐触点橡皮。
 			TABLET_DISABLE_FLICKS;
 
 		struct SystemCursorSnapshot

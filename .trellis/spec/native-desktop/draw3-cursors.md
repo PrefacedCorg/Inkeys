@@ -56,7 +56,7 @@ Mouse/Pen 选择独立往返，不保存高亮。`MouseHighlightEdge`、`ScreenP
 
 ### Touch 与 Win7
 
-- 主 Drawpad 的系统触摸反馈始终禁用，无 UI 开关、无持久化布尔值，不迁移/恢复 `HideTouchPointerBeta`。`TABLET_DISABLE_TOUCHUIFORCEOFF` 加入现有 Vista+ 固定策略，首次输入前的窗口属性和 `WM_TABLET_QUERYSYSTEMGESTURESTATUS` 使用同一标志。
+- 主 Drawpad 的系统触摸指针（菱形白底黑边落点反馈）在批注期间保持可见：无 UI 开关、无持久化布尔值，不迁移/恢复 `HideTouchPointerBeta`。因此 `kTabletInputFlags` 不包含 `TABLET_DISABLE_TOUCHUIFORCEOFF`，仍保留多点与其余触摸反馈抑制；首次输入前的窗口属性和 `WM_TABLET_QUERYSYSTEMGESTURESTATUS`（含 Host 启动前的 `0x02CC` 回退）必须使用同一标志。
 - Touch 最后一指 Up/Cancel 及重复 Pen 清除都重新请求 UI owner 刷新系统光标；Touch suppression 保持到新的真实 Pen/Mouse 接管，不因终态恢复旧 Hover。
 - 保留 `WindowFromPoint` 归属保护和既有来源过滤；Win7 无输入来源 API 不能成为拒绝一切未知 Mouse 的理由。不得以固定延时/全局 hook 替代来源判定。
 - 关闭诊断时不采集/格式化系统光标信息。开启时记录 `GetCursorInfo` 实际 flags/handle 与策略决策，采样有界；不能把 SetCursor 调用或 headless 通过当成 Win7 桌面视觉验收。
