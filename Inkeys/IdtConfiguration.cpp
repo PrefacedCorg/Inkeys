@@ -1,13 +1,13 @@
-import Inkeys.Conv.Text;
-
-import Inkeys.Other.Config;
-
 #include "IdtConfiguration.h"
 #include "Inkeys/Drawing/Draw3/Draw3.Bridge.h"
 
 #include "IdtState.h"
 #include "Inkeys/Business/PenWidthPreferences.hpp"
 #include <cstdio>
+
+import Inkeys.Conv.Text;
+
+import Inkeys.Other.Config;
 
 // 占用文件
 bool OccupyFileForRead(HANDLE* hFile, const wstring& filePath)

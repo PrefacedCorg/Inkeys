@@ -1,17 +1,24 @@
 <Project>
 
-	<!-- 1) 只为 VC++ 项目导入 vcpkg 的 MSBuild 集成。 -->
+	<!-- 1) vcpkg triplet 跟随工程工具集：VS2026(v145) 与 CI(v143) 各自安装独立依赖，互不复用。 -->
+	<PropertyGroup Condition="'$(MSBuildProjectExtension)'=='.vcxproj' and '$(VcpkgEnableManifest)' == 'true' and '$(PlatformToolset)' == 'v145'">
+		<VcpkgTriplet Condition="'$(Platform)'=='Win32'">x86-windows-static-v145</VcpkgTriplet>
+		<VcpkgTriplet Condition="'$(Platform)'=='x64'">x64-windows-static-v145</VcpkgTriplet>
+		<VcpkgTriplet Condition="'$(Platform)'=='ARM64'">arm64-windows-static-v145</VcpkgTriplet>
+	</PropertyGroup>
+
+	<!-- 2) 只为 VC++ 项目导入 vcpkg 的 MSBuild 集成。 -->
 	<Import Project="$(MSBuildThisFileDirectory)Vcpkg\scripts\buildsystems\msbuild\vcpkg.targets"
 	        Condition="'$(MSBuildProjectExtension)'=='.vcxproj'" />
 
-	<!-- 2) 将 vcpkg manifest 安装加入模块依赖扫描链。 -->
+	<!-- 3) 将 vcpkg manifest 安装加入模块依赖扫描链。 -->
 	<PropertyGroup Condition="'$(MSBuildProjectExtension)'=='.vcxproj'">
 		<SetModuleDependenciesDependsOn>
 			$(SetModuleDependenciesDependsOn);VcpkgInstallManifestDependencies
 		</SetModuleDependenciesDependsOn>
 	</PropertyGroup>
 
-	<!-- 3) 兜底：确保模块扫描前已完成 vcpkg 安装。 -->
+	<!-- 4) 兜底：确保模块扫描前已完成 vcpkg 安装。 -->
 	<Target Name="ForceVcpkgBeforeModuleScan"
 			BeforeTargets="SetModuleDependencies;ScanDependenciesPerFile;ScanDependencies"
 			DependsOnTargets="VcpkgInstallManifestDependencies"

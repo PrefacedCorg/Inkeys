@@ -1,10 +1,9 @@
-﻿import Inkeys.Net.Update;
-
-#include "IdtStart.h"
-
-import Inkeys.Display;
+﻿#include "IdtStart.h"
 #include "IdtDraw.h"
 #include "IdtState.h"
+
+import Inkeys.Net.Update;
+import Inkeys.Display;
 
 struct
 {

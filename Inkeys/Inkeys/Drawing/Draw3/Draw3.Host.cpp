@@ -6,6 +6,22 @@
 #include "Draw3.PptTiming.h"
 #include "Draw3.SpeedEraser.h"
 
+#include <atomic>
+#include <algorithm>
+#include <chrono>
+#include <condition_variable>
+#include <cstdio>
+#include <exception>
+#if defined(INKEYS_ENABLE_UI3_PRESENTATION_HARNESS) && INKEYS_ENABLE_UI3_PRESENTATION_HARNESS
+#include <filesystem>
+#endif
+#include <iostream>
+#include <limits>
+#include <mutex>
+#include <stdexcept>
+#include <thread>
+#include <utility>
+
 import Inkeys.Display;
 import Inkeys.UI.PageControl;
 
@@ -22,22 +38,6 @@ import Inkeys.Drawing.Draw3.realtime_stylus;
 import Inkeys.Drawing.Draw3.runtime_metrics;
 import Inkeys.Drawing.Draw3.transparent_presentation;
 import Inkeys.Drawing.Draw3.window_control;
-
-#include <atomic>
-#include <algorithm>
-#include <chrono>
-#include <condition_variable>
-#include <cstdio>
-#include <exception>
-#if defined(INKEYS_ENABLE_UI3_PRESENTATION_HARNESS) && INKEYS_ENABLE_UI3_PRESENTATION_HARNESS
-#include <filesystem>
-#endif
-#include <iostream>
-#include <limits>
-#include <mutex>
-#include <stdexcept>
-#include <thread>
-#include <utility>
 
 namespace Inkeys::Drawing::Draw3
 {

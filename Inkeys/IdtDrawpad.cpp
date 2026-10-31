@@ -1,16 +1,6 @@
-import Inkeys.UI.Bar;
-import Inkeys.UI.Ppt;
-import Inkeys.UI.PageControl;
-import Inkeys.Helper.Thread;
-import Inkeys.Window;
-import Inkeys.Other.Inputs;
-import Inkeys.Conv.Text;
-import Inkeys.Text.Font;
-
 #include "IdtDrawpad.h"
 
 #include "IdtConfiguration.h"
-import Inkeys.Display;
 #include "IdtDraw.h"
 #include "Inkeys/Business/LegacyDrawState.hpp"
 #include "IdtHistoricalDrawpad.h"
@@ -21,7 +11,6 @@ import Inkeys.Display;
 #include "IdtState.h"
 #include "IdtTime.h"
 #include "Inkeys/Window/Window.Legacy.hpp"
-#include "Inkeys/Window/Window.Legacy.hpp"
 
 #include <queue>
 
@@ -29,6 +18,16 @@ import Inkeys.Display;
 #include <propkey.h>
 #include <propvarutil.h>
 #pragma comment(lib, "propsys.lib")
+
+import Inkeys.UI.Bar;
+import Inkeys.UI.Ppt;
+import Inkeys.UI.PageControl;
+import Inkeys.Helper.Thread;
+import Inkeys.Window;
+import Inkeys.Other.Inputs;
+import Inkeys.Conv.Text;
+import Inkeys.Text.Font;
+import Inkeys.Display;
 
 bool main_open;
 bool FirstDraw = true;

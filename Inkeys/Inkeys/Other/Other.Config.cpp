@@ -15,6 +15,12 @@ module Inkeys.Other.Config;
 
 import Inkeys.Conv.Text;
 
+namespace Inkeys
+{
+	Config config{}; // 实时配置集
+	Config configOnce{}; // 首次启动配置集
+}
+
 namespace
 {
 	constexpr LONGLONG kMaxConfigFileBytes = 16LL * 1024 * 1024;

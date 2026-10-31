@@ -541,9 +541,9 @@ bool ReadImpl(const std::vector<std::string>& paths);
 		return *this;
 	}
 
-	// 全局配置集合
-	export inline Config config{}; // 实时配置集
-	export inline Config configOnce{}; // 首次启动配置集
+	// 全局配置集合（定义位于 Other.Config.cpp，避免模块内 inline 变量在 19.51 的符号名不一致）
+	export extern Config config; // 实时配置集
+	export extern Config configOnce; // 首次启动配置集
 }
 
 #undef INKEYS_CONFIG_SCHEMA

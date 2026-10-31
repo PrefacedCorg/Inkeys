@@ -1,11 +1,4 @@
-﻿import Inkeys.Helper.Thread;
-import Inkeys.Helper.SecRandom;
-import Inkeys.Net.Update;
-import Inkeys.Other.Inputs;
-import Inkeys.Conv.Text;
-import Inkeys.Text.Font;
-
-#include "IdtFloating.h"
+﻿#include "IdtFloating.h"
 
 #include "IdtConfiguration.h"
 #include "IdtDraw.h"
@@ -28,6 +21,13 @@ import Inkeys.Text.Font;
 #include <atomic>
 #include <condition_variable>
 #include <mutex>
+
+import Inkeys.Helper.Thread;
+import Inkeys.Helper.SecRandom;
+import Inkeys.Net.Update;
+import Inkeys.Other.Inputs;
+import Inkeys.Conv.Text;
+import Inkeys.Text.Font;
 
 floating_windowsStruct floating_windows;
 

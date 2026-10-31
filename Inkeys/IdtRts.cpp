@@ -1,11 +1,11 @@
-﻿import Inkeys.Other.Inputs;
-
-#include "IdtRts.h"
+﻿#include "IdtRts.h"
 
 #include "IdtConfiguration.h"
 #include "IdtDrawpad.h"
 #include "Inkeys/Business/LegacyDrawState.hpp"
 #include "Inkeys/Window/Window.Legacy.hpp"
+
+import Inkeys.Other.Inputs;
 
 IdtAtomic<bool> rtsDown;												// 表示触摸设备是否被按下
 IdtAtomic<int> rtsNum = 0, touchNum = 0, inkNum = 0;					// 点、触摸点、触控笔的点击个数

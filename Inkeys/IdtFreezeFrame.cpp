@@ -1,13 +1,6 @@
-﻿import Inkeys.Helper.Thread;
-import Inkeys.Text.Font;
-import Inkeys.Window;
-import Inkeys.Startup.Progress;
-import Inkeys.UI.Freeze;
-
-#include "IdtFreezeFrame.h"
+﻿#include "IdtFreezeFrame.h"
 
 #include "IdtConfiguration.h"
-import Inkeys.Display;
 #include "IdtDraw.h"
 #include "IdtI18n.h"
 #include "IdtImage.h"
@@ -16,6 +9,13 @@ import Inkeys.Display;
 
 #include <atomic>
 #include <mutex>
+
+import Inkeys.Display;
+import Inkeys.Helper.Thread;
+import Inkeys.Text.Font;
+import Inkeys.Window;
+import Inkeys.Startup.Progress;
+import Inkeys.UI.Freeze;
 
 int FreezeRecall;
 

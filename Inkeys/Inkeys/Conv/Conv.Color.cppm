@@ -1,7 +1,15 @@
 module;
 
-#include "../../IdtMain.h"
+#include <windows.h>
+#include <algorithm>
 #include <d2d1helper.h>
+
+#ifndef RGBA
+#define RGBA(r, g, b, a) (COLORREF)(((b) << 16) | ((g) << 8) | (r) | ((a) << 24))
+#endif
+#ifndef GetAValue
+#define GetAValue(rgba) (BYTE)(((rgba) >> 24) & 0xFF)
+#endif
 
 export module Inkeys.Conv.Color;
 

@@ -1,7 +1,4 @@
-﻿import Inkeys.Conv.Text;
-import Inkeys.Helper.CrashHandler;
-
-#include "IdtWindow.h"
+﻿#include "IdtWindow.h"
 
 #include "IdtConfiguration.h"
 #include "IdtDraw.h"
@@ -11,6 +8,9 @@ import Inkeys.Helper.CrashHandler;
 #include "IdtRts.h"
 #include "IdtState.h"
 #include "Launch/IdtLaunchState.h"
+
+import Inkeys.Conv.Text;
+import Inkeys.Helper.CrashHandler;
 
 HWND floating_window = NULL; //悬浮窗窗口
 HWND drawpad_window = NULL; //画板窗口

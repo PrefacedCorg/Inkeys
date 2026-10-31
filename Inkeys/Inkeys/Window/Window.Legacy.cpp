@@ -1,9 +1,3 @@
-import Inkeys.Helper.CrashHandler;
-import Inkeys.Window;
-import Inkeys.UI.MessageBox;
-import Inkeys.UI.StartupPreview;
-import Inkeys.Startup.Progress;
-
 #include "Window.Legacy.hpp"
 
 #include "../../IdtConfiguration.h"
@@ -16,6 +10,12 @@ import Inkeys.Startup.Progress;
 #ifdef MessageBox
 #undef MessageBox
 #endif
+
+import Inkeys.Helper.CrashHandler;
+import Inkeys.Window;
+import Inkeys.UI.MessageBox;
+import Inkeys.UI.StartupPreview;
+import Inkeys.Startup.Progress;
 
 HWND floating_window = nullptr;
 HWND drawpad_window = nullptr;

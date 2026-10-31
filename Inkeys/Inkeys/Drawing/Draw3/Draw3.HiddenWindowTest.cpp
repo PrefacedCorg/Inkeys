@@ -6,15 +6,6 @@
 #include "Draw3.Win7GuardedShader.h"
 #include "Draw3.ShaderCompatibility.h"
 
-import Inkeys.Window;
-import Inkeys.Drawing.Draw3.renderer;
-import Inkeys.Drawing.Draw3.pen_cursor;
-import Inkeys.Drawing.Draw3.diagnostics;
-import Inkeys.Drawing.Draw3.drawing_controller;
-import Inkeys.Drawing.Draw3.ink_prediction;
-import draw3.uink_file;
-import draw3.uink_draw3_import;
-
 #include <algorithm>
 #include <array>
 #include <atomic>
@@ -37,6 +28,15 @@ import draw3.uink_draw3_import;
 #include <vector>
 #include <variant>
 #include <wrl/client.h>
+
+import Inkeys.Window;
+import Inkeys.Drawing.Draw3.renderer;
+import Inkeys.Drawing.Draw3.pen_cursor;
+import Inkeys.Drawing.Draw3.diagnostics;
+import Inkeys.Drawing.Draw3.drawing_controller;
+import Inkeys.Drawing.Draw3.ink_prediction;
+import draw3.uink_file;
+import draw3.uink_draw3_import;
 
 namespace Inkeys::Drawing::Draw3
 {

@@ -40,42 +40,42 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>false</UseDebugLibraries>
-    <PlatformToolset>v143</PlatformToolset>
+    <PlatformToolset>v145</PlatformToolset>
     <WholeProgramOptimization>true</WholeProgramOptimization>
     <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>false</UseDebugLibraries>
-    <PlatformToolset>v143</PlatformToolset>
+    <PlatformToolset>v145</PlatformToolset>
     <WholeProgramOptimization>false</WholeProgramOptimization>
     <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>false</UseDebugLibraries>
-    <PlatformToolset>v143</PlatformToolset>
+    <PlatformToolset>v145</PlatformToolset>
     <WholeProgramOptimization>true</WholeProgramOptimization>
     <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>false</UseDebugLibraries>
-    <PlatformToolset>v143</PlatformToolset>
+    <PlatformToolset>v145</PlatformToolset>
     <WholeProgramOptimization>false</WholeProgramOptimization>
     <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM64'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>false</UseDebugLibraries>
-    <PlatformToolset>v143</PlatformToolset>
+    <PlatformToolset>v145</PlatformToolset>
     <WholeProgramOptimization>true</WholeProgramOptimization>
     <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>false</UseDebugLibraries>
-    <PlatformToolset>v143</PlatformToolset>
+    <PlatformToolset>v145</PlatformToolset>
     <WholeProgramOptimization>false</WholeProgramOptimization>
     <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
@@ -411,20 +411,20 @@
     </Manifest>
   </ItemDefinitionGroup>
   <ItemGroup>
-	<ClInclude Include="Inkeys\UI\Bar\Bar.PresentationAlpha.h" />
-	<ClInclude Include="Inkeys\UI\Whiteboard\Whiteboard.Theme.h" />
-	<ClInclude Include="Inkeys\Drawing\Draw3\Draw3.WhiteboardModel.h" />
-	<ClInclude Include="Inkeys\UI\Freeze\Freeze.MagnifierCoordinator.h" />
-	<ClInclude Include="Inkeys\Graphics\Surface.Core.hpp" />
-	<ClInclude Include="Inkeys\Graphics\Surface.hpp" />
-	<ClInclude Include="Inkeys\Business\LegacyDrawState.hpp" />
-	<ClInclude Include="Inkeys\Business\PenToolState.hpp" />
-	<ClInclude Include="Inkeys\Business\PenWidthPolicy.hpp" />
-	<ClInclude Include="Inkeys\Business\PenWidthPreferences.hpp" />
-	<ClInclude Include="Inkeys\Window\Window.Legacy.hpp" />
+    <ClInclude Include="Inkeys\UI\Bar\Bar.PresentationAlpha.h" />
+    <ClInclude Include="Inkeys\UI\Whiteboard\Whiteboard.Theme.h" />
+    <ClInclude Include="Inkeys\Drawing\Draw3\Draw3.WhiteboardModel.h" />
+    <ClInclude Include="Inkeys\UI\Freeze\Freeze.MagnifierCoordinator.h" />
+    <ClInclude Include="Inkeys\Graphics\Surface.Core.hpp" />
+    <ClInclude Include="Inkeys\Graphics\Surface.hpp" />
+    <ClInclude Include="Inkeys\Business\LegacyDrawState.hpp" />
+    <ClInclude Include="Inkeys\Business\PenToolState.hpp" />
+    <ClInclude Include="Inkeys\Business\PenWidthPolicy.hpp" />
+    <ClInclude Include="Inkeys\Business\PenWidthPreferences.hpp" />
+    <ClInclude Include="Inkeys\Window\Window.Legacy.hpp" />
     <ClInclude Include="IdtAtomic.h" />
-	<ClInclude Include="Inkeys\UI\Bar\Bar.BottomDock.h" />
-	<ClInclude Include="Inkeys\UI\Bar\Bar.A2.h" />
+    <ClInclude Include="Inkeys\UI\Bar\Bar.BottomDock.h" />
+    <ClInclude Include="Inkeys\UI\Bar\Bar.A2.h" />
     <ClInclude Include="Inkeys\UI\Bar\Bar.AutoCollapse.h" />
     <ClInclude Include="Inkeys\UI\Bar\Bar.AutoCollapseInteraction.h" />
     <ClInclude Include="Inkeys\Input\MouseHook.Transport.h" />
@@ -433,7 +433,7 @@
     <ClInclude Include="Inkeys\Business\PptSessionToken.h" />
     <ClInclude Include="Inkeys\UI\Bar\Bar.DirtyRegion.h" />
     <ClInclude Include="Inkeys\UI\Bar\Bar.DisplayTransition.h" />
-	<ClInclude Include="Inkeys\UI\Bar\Bar.I18nFormat.h" />
+    <ClInclude Include="Inkeys\UI\Bar\Bar.I18nFormat.h" />
     <ClInclude Include="Inkeys\UI\RenderPipeline\RenderPipeline.Diagnostics.h" />
     <ClInclude Include="Inkeys\UI\Bar\Bar.PresentDecision.h" />
     <ClInclude Include="additional\hashlib++\hashlibpp.h" />
@@ -881,40 +881,40 @@
     <ClInclude Include="additional\ink_stroke_modeler\types.h" />
   </ItemGroup>
   <ItemGroup>
-	<ClCompile Include="Inkeys\Graphics\Surface.cpp" />
-	<ClCompile Include="Inkeys\Graphics\Surface.cppm" />
-	<ClCompile Include="Inkeys\Business\ComponentActions.cpp" />
-	<ClCompile Include="Inkeys\Business\ComponentActions.cppm" />
-	<ClCompile Include="Inkeys\Business\LegacyDrawState.cpp" />
-	<ClCompile Include="Inkeys\Input\UiPointerInput.cpp" />
-	<ClCompile Include="Inkeys\Input\MouseHook.cpp" />
-	<ClCompile Include="Inkeys\Input\KeyboardShortcuts.cpp" />
-	<ClCompile Include="Inkeys\Input\MouseHook.cppm" />
-	<ClCompile Include="Inkeys\Message\Message.cpp" />
-	<ClCompile Include="Inkeys\Message\Message.cppm" />
-	<ClCompile Include="Inkeys\Display\Display.cppm" />
-	<ClCompile Include="Inkeys\Display\Display.cpp" />
-	<ClCompile Include="Inkeys\Window\Window.cpp" />
-	<ClCompile Include="Inkeys\Window\Window.cppm" />
-	<ClCompile Include="Inkeys\UI\RenderPipeline\RenderPipeline.cppm" />
-	<ClCompile Include="Inkeys\UI\RenderPipeline\RenderPipeline.cpp" />
-	<ClCompile Include="Inkeys\Startup\Startup.Progress.cppm" />
-	<ClCompile Include="Inkeys\Startup\Startup.Progress.cpp" />
-	<ClCompile Include="Inkeys\UI\StartupPreview\StartupPreview.State.cppm" />
-	<ClCompile Include="Inkeys\UI\StartupPreview\StartupPreview.State.cpp" />
-	<ClCompile Include="Inkeys\UI\StartupPreview\StartupPreview.cppm" />
-	<ClCompile Include="Inkeys\UI\StartupPreview\StartupPreview.cpp" />
-	<ClCompile Include="Inkeys\UI\PageControl\PageControl.cppm" />
-	<ClCompile Include="Inkeys\UI\PageControl\PageControl.cpp" />
-	<ClCompile Include="Inkeys\UI\Ppt\Ppt.cppm" />
-	<ClCompile Include="Inkeys\UI\Ppt\Ppt.cpp" />
-	<ClCompile Include="Inkeys\UI\Whiteboard\Whiteboard.cppm" />
-	<ClCompile Include="Inkeys\UI\Whiteboard\Whiteboard.cpp" />
-	<ClCompile Include="Inkeys\UI\MessageBox\MessageBox.cppm" />
-	<ClCompile Include="Inkeys\UI\MessageBox\MessageBox.cpp" />
-	<ClCompile Include="Inkeys\UI\MessageBox\MessageBox.Layout.cpp" />
-	<ClCompile Include="Inkeys\UI\MessageBox\MessageBox.Window.cpp" />
-	<ClCompile Include="Inkeys\Window\Window.Legacy.cpp" />
+    <ClCompile Include="Inkeys\Graphics\Surface.cpp" />
+    <ClCompile Include="Inkeys\Graphics\Surface.cppm" />
+    <ClCompile Include="Inkeys\Business\ComponentActions.cpp" />
+    <ClCompile Include="Inkeys\Business\ComponentActions.cppm" />
+    <ClCompile Include="Inkeys\Business\LegacyDrawState.cpp" />
+    <ClCompile Include="Inkeys\Input\UiPointerInput.cpp" />
+    <ClCompile Include="Inkeys\Input\MouseHook.cpp" />
+    <ClCompile Include="Inkeys\Input\KeyboardShortcuts.cpp" />
+    <ClCompile Include="Inkeys\Input\MouseHook.cppm" />
+    <ClCompile Include="Inkeys\Message\Message.cpp" />
+    <ClCompile Include="Inkeys\Message\Message.cppm" />
+    <ClCompile Include="Inkeys\Display\Display.cppm" />
+    <ClCompile Include="Inkeys\Display\Display.cpp" />
+    <ClCompile Include="Inkeys\Window\Window.cpp" />
+    <ClCompile Include="Inkeys\Window\Window.cppm" />
+    <ClCompile Include="Inkeys\UI\RenderPipeline\RenderPipeline.cppm" />
+    <ClCompile Include="Inkeys\UI\RenderPipeline\RenderPipeline.cpp" />
+    <ClCompile Include="Inkeys\Startup\Startup.Progress.cppm" />
+    <ClCompile Include="Inkeys\Startup\Startup.Progress.cpp" />
+    <ClCompile Include="Inkeys\UI\StartupPreview\StartupPreview.State.cppm" />
+    <ClCompile Include="Inkeys\UI\StartupPreview\StartupPreview.State.cpp" />
+    <ClCompile Include="Inkeys\UI\StartupPreview\StartupPreview.cppm" />
+    <ClCompile Include="Inkeys\UI\StartupPreview\StartupPreview.cpp" />
+    <ClCompile Include="Inkeys\UI\PageControl\PageControl.cppm" />
+    <ClCompile Include="Inkeys\UI\PageControl\PageControl.cpp" />
+    <ClCompile Include="Inkeys\UI\Ppt\Ppt.cppm" />
+    <ClCompile Include="Inkeys\UI\Ppt\Ppt.cpp" />
+    <ClCompile Include="Inkeys\UI\Whiteboard\Whiteboard.cppm" />
+    <ClCompile Include="Inkeys\UI\Whiteboard\Whiteboard.cpp" />
+    <ClCompile Include="Inkeys\UI\MessageBox\MessageBox.cppm" />
+    <ClCompile Include="Inkeys\UI\MessageBox\MessageBox.cpp" />
+    <ClCompile Include="Inkeys\UI\MessageBox\MessageBox.Layout.cpp" />
+    <ClCompile Include="Inkeys\UI\MessageBox\MessageBox.Window.cpp" />
+    <ClCompile Include="Inkeys\Window\Window.Legacy.cpp" />
     <ClCompile Include="additional\hashlib++\hl_md5.cpp" />
     <ClCompile Include="additional\hashlib++\hl_md5wrapper.cpp" />
     <ClCompile Include="additional\hashlib++\hl_sha1.cpp" />
@@ -983,7 +983,7 @@
     <ClCompile Include="Inkeys\UI\Bar\Bar.Animation.cpp" />
     <ClCompile Include="Inkeys\UI\Bar\Bar.Animation.cppm" />
     <ClCompile Include="Inkeys\UI\Bar\Bar.FramePacing.cppm" />
-	<ClCompile Include="Inkeys\UI\Bar\Bar.ToggleClickCoalescer.cppm" />
+    <ClCompile Include="Inkeys\UI\Bar\Bar.ToggleClickCoalescer.cppm" />
     <ClCompile Include="Inkeys\UI\Bar\Bar.WakeSignal.cppm" />
     <ClCompile Include="Inkeys\UI\Bar\Bar.Button.cppm" />
     <ClCompile Include="Inkeys\UI\Bar\Bar.Button.cpp" />
@@ -1039,39 +1039,43 @@
     <ClCompile Include="Inkeys\Drawing\Draw3\Draw3.CanvasNavigation.cppm">
       <CompileAs>CompileAsCppModule</CompileAs>
     </ClCompile>
-	<ClCompile Include="..\inkStrokeModelerTest\draw3\uink_model.cpp" Link="Inkeys\Drawing\Draw3\Shared\uink_model.cpp" />
-	<ClCompile Include="..\inkStrokeModelerTest\draw3\uink_model.cppm" Link="Inkeys\Drawing\Draw3\Shared\uink_model.cppm">
-	  <CompileAs>CompileAsCppModule</CompileAs>
-	</ClCompile>
-	<ClCompile Include="..\inkStrokeModelerTest\draw3\uink_codec.cpp" Link="Inkeys\Drawing\Draw3\Shared\uink_codec.cpp" />
-	<ClCompile Include="..\inkStrokeModelerTest\draw3\uink_codec_encode.cpp" Link="Inkeys\Drawing\Draw3\Shared\uink_codec_encode.cpp" />
-	<ClCompile Include="..\inkStrokeModelerTest\draw3\uink_codec.cppm" Link="Inkeys\Drawing\Draw3\Shared\uink_codec.cppm">
-	  <CompileAs>CompileAsCppModule</CompileAs>
-	</ClCompile>
-	<ClCompile Include="..\inkStrokeModelerTest\draw3\uink_page_file.cpp" />
-	<ClCompile Include="..\inkStrokeModelerTest\draw3\uink_page_file.cppm"><CompileAs>CompileAsCppModule</CompileAs></ClCompile>
-	<ClCompile Include="..\inkStrokeModelerTest\draw3\uink_file.cpp" Link="Inkeys\Drawing\Draw3\Shared\uink_file.cpp" />
-	<ClCompile Include="..\inkStrokeModelerTest\draw3\uink_file.cppm" Link="Inkeys\Drawing\Draw3\Shared\uink_file.cppm">
-	  <CompileAs>CompileAsCppModule</CompileAs>
-	</ClCompile>
-	<ClCompile Include="..\inkStrokeModelerTest\draw3\uink_draw3_export.cpp" Link="Inkeys\Drawing\Draw3\Shared\uink_draw3_export.cpp" />
-	<ClCompile Include="..\inkStrokeModelerTest\draw3\uink_draw3_export.cppm" Link="Inkeys\Drawing\Draw3\Shared\uink_draw3_export.cppm">
-	  <CompileAs>CompileAsCppModule</CompileAs>
-	</ClCompile>
-	<ClCompile Include="..\inkStrokeModelerTest\draw3\uink_draw3_import.cpp" Link="Inkeys\Drawing\Draw3\Shared\uink_draw3_import.cpp" />
-	<ClCompile Include="..\inkStrokeModelerTest\draw3\uink_draw3_import.cppm" Link="Inkeys\Drawing\Draw3\Shared\uink_draw3_import.cppm">
-	  <CompileAs>CompileAsCppModule</CompileAs>
-	</ClCompile>
-	<ClCompile Include="Inkeys\Drawing\Draw3\Draw3.AutoSave.cpp" />
-	<ClCompile Include="Inkeys\Drawing\Draw3\Draw3.AutoSave.cppm">
-	  <CompileAs>CompileAsCppModule</CompileAs>
-	</ClCompile>
-	<ClCompile Include="Inkeys\Drawing\Draw3\Draw3.WhiteboardStore.cpp" />
-	<ClCompile Include="Inkeys\Drawing\Draw3\Draw3.WhiteboardStore.cppm"><CompileAs>CompileAsCppModule</CompileAs></ClCompile>
-	<ClCompile Include="Inkeys\Drawing\Draw3\Draw3.PresentationAutoSave.cpp" />
-	<ClCompile Include="Inkeys\Drawing\Draw3\Draw3.PresentationAutoSave.cppm">
-	  <CompileAs>CompileAsCppModule</CompileAs>
-	</ClCompile>
+    <ClCompile Include="..\inkStrokeModelerTest\draw3\uink_model.cpp" Link="Inkeys\Drawing\Draw3\Shared\uink_model.cpp" />
+    <ClCompile Include="..\inkStrokeModelerTest\draw3\uink_model.cppm" Link="Inkeys\Drawing\Draw3\Shared\uink_model.cppm">
+      <CompileAs>CompileAsCppModule</CompileAs>
+    </ClCompile>
+    <ClCompile Include="..\inkStrokeModelerTest\draw3\uink_codec.cpp" Link="Inkeys\Drawing\Draw3\Shared\uink_codec.cpp" />
+    <ClCompile Include="..\inkStrokeModelerTest\draw3\uink_codec_encode.cpp" Link="Inkeys\Drawing\Draw3\Shared\uink_codec_encode.cpp" />
+    <ClCompile Include="..\inkStrokeModelerTest\draw3\uink_codec.cppm" Link="Inkeys\Drawing\Draw3\Shared\uink_codec.cppm">
+      <CompileAs>CompileAsCppModule</CompileAs>
+    </ClCompile>
+    <ClCompile Include="..\inkStrokeModelerTest\draw3\uink_page_file.cpp" />
+    <ClCompile Include="..\inkStrokeModelerTest\draw3\uink_page_file.cppm">
+      <CompileAs>CompileAsCppModule</CompileAs>
+    </ClCompile>
+    <ClCompile Include="..\inkStrokeModelerTest\draw3\uink_file.cpp" Link="Inkeys\Drawing\Draw3\Shared\uink_file.cpp" />
+    <ClCompile Include="..\inkStrokeModelerTest\draw3\uink_file.cppm" Link="Inkeys\Drawing\Draw3\Shared\uink_file.cppm">
+      <CompileAs>CompileAsCppModule</CompileAs>
+    </ClCompile>
+    <ClCompile Include="..\inkStrokeModelerTest\draw3\uink_draw3_export.cpp" Link="Inkeys\Drawing\Draw3\Shared\uink_draw3_export.cpp" />
+    <ClCompile Include="..\inkStrokeModelerTest\draw3\uink_draw3_export.cppm" Link="Inkeys\Drawing\Draw3\Shared\uink_draw3_export.cppm">
+      <CompileAs>CompileAsCppModule</CompileAs>
+    </ClCompile>
+    <ClCompile Include="..\inkStrokeModelerTest\draw3\uink_draw3_import.cpp" Link="Inkeys\Drawing\Draw3\Shared\uink_draw3_import.cpp" />
+    <ClCompile Include="..\inkStrokeModelerTest\draw3\uink_draw3_import.cppm" Link="Inkeys\Drawing\Draw3\Shared\uink_draw3_import.cppm">
+      <CompileAs>CompileAsCppModule</CompileAs>
+    </ClCompile>
+    <ClCompile Include="Inkeys\Drawing\Draw3\Draw3.AutoSave.cpp" />
+    <ClCompile Include="Inkeys\Drawing\Draw3\Draw3.AutoSave.cppm">
+      <CompileAs>CompileAsCppModule</CompileAs>
+    </ClCompile>
+    <ClCompile Include="Inkeys\Drawing\Draw3\Draw3.WhiteboardStore.cpp" />
+    <ClCompile Include="Inkeys\Drawing\Draw3\Draw3.WhiteboardStore.cppm">
+      <CompileAs>CompileAsCppModule</CompileAs>
+    </ClCompile>
+    <ClCompile Include="Inkeys\Drawing\Draw3\Draw3.PresentationAutoSave.cpp" />
+    <ClCompile Include="Inkeys\Drawing\Draw3\Draw3.PresentationAutoSave.cppm">
+      <CompileAs>CompileAsCppModule</CompileAs>
+    </ClCompile>
     <ClCompile Include="Inkeys\Drawing\Draw3\Draw3.ContactInput.cpp" />
     <ClCompile Include="Inkeys\Drawing\Draw3\Draw3.ContactInput.cppm">
       <CompileAs>CompileAsCppModule</CompileAs>
@@ -1158,7 +1162,7 @@
     <ResourceCompile Include="Inkeys.rc" />
   </ItemGroup>
   <ItemGroup>
-	<Image Include="src\message_box\error.png" />
+    <Image Include="src\message_box\error.png" />
     <Image Include="src\ClassIsland.png" />
     <Image Include="src\icon.ico" />
     <Image Include="src\IslandCaller.png" />
@@ -1184,12 +1188,12 @@
     <Image Include="src\sign3.png" />
   </ItemGroup>
   <ItemGroup>
-	<None Include="IdtFloating.cpp" />
-	<None Include="IdtFloating.h" />
-	<None Include="IdtWindow.cpp" />
-	<None Include="IdtWindow.h" />
-	<None Include="additional\imfluent\LICENSE" />
-	<None Include="additional\imfluent\UPSTREAM.md" />
+    <None Include="IdtFloating.cpp" />
+    <None Include="IdtFloating.h" />
+    <None Include="IdtWindow.cpp" />
+    <None Include="IdtWindow.h" />
+    <None Include="additional\imfluent\LICENSE" />
+    <None Include="additional\imfluent\UPSTREAM.md" />
     <None Include="Inkeys\UI\RenderPipeline\Assets\ImGui\imgui_common.hlsli" />
     <None Include="Inkeys\UI\RenderPipeline\Assets\ImGui\imgui_eraser_demo.hlsli" />
     <None Include="Inkeys\UI\RenderPipeline\Assets\ImGui\imgui_ps.cso" />
@@ -1391,9 +1395,7 @@
     <Delete Files="$(TargetDir)PptCOM.dll" />
   </Target>
   <!-- FXC 10.1 不接受 BOM；只在中间目录生成 Draw3 的无 BOM 副本。 -->
-  <Target Name="PrepareDraw3FxcCompatibleHlsl" BeforeTargets="FxCompile"
-          Inputs="$(ProjectDir)Inkeys\Drawing\Draw3\Assets\EraserGripVisual.h;$(ProjectDir)Inkeys\Drawing\Draw3\Assets\ink.hlsli;$(ProjectDir)Inkeys\Drawing\Draw3\Assets\laserParticleCommon.hlsli;$(ProjectDir)Inkeys\Drawing\Draw3\Assets\inkPixelShader.hlsl;$(ProjectDir)Inkeys\Drawing\Draw3\Assets\inkVertexShader.hlsl;$(ProjectDir)Inkeys\Drawing\Draw3\Assets\laserParticleUpdateCS.hlsl;$(ProjectDir)Inkeys\Drawing\Draw3\Assets\laserParticleEmitCS.hlsl"
-          Outputs="$(IntDir)fxc_utf8\draw3\EraserGripVisual.h;$(IntDir)fxc_utf8\draw3\ink.hlsli;$(IntDir)fxc_utf8\draw3\laserParticleCommon.hlsli;$(IntDir)fxc_utf8\draw3\inkPixelShader.hlsl;$(IntDir)fxc_utf8\draw3\inkVertexShader.hlsl;$(IntDir)fxc_utf8\draw3\laserParticleUpdateCS.hlsl;$(IntDir)fxc_utf8\draw3\laserParticleEmitCS.hlsl">
+  <Target Name="PrepareDraw3FxcCompatibleHlsl" BeforeTargets="FxCompile" Inputs="$(ProjectDir)Inkeys\Drawing\Draw3\Assets\EraserGripVisual.h;$(ProjectDir)Inkeys\Drawing\Draw3\Assets\ink.hlsli;$(ProjectDir)Inkeys\Drawing\Draw3\Assets\laserParticleCommon.hlsli;$(ProjectDir)Inkeys\Drawing\Draw3\Assets\inkPixelShader.hlsl;$(ProjectDir)Inkeys\Drawing\Draw3\Assets\inkVertexShader.hlsl;$(ProjectDir)Inkeys\Drawing\Draw3\Assets\laserParticleUpdateCS.hlsl;$(ProjectDir)Inkeys\Drawing\Draw3\Assets\laserParticleEmitCS.hlsl" Outputs="$(IntDir)fxc_utf8\draw3\EraserGripVisual.h;$(IntDir)fxc_utf8\draw3\ink.hlsli;$(IntDir)fxc_utf8\draw3\laserParticleCommon.hlsli;$(IntDir)fxc_utf8\draw3\inkPixelShader.hlsl;$(IntDir)fxc_utf8\draw3\inkVertexShader.hlsl;$(IntDir)fxc_utf8\draw3\laserParticleUpdateCS.hlsl;$(IntDir)fxc_utf8\draw3\laserParticleEmitCS.hlsl">
     <MakeDir Directories="$(IntDir)fxc_utf8\draw3" />
     <ReadLinesFromFile File="$(ProjectDir)Inkeys\Drawing\Draw3\Assets\EraserGripVisual.h">
       <Output TaskParameter="Lines" ItemName="_Draw3FxcEraserVisualLines" />

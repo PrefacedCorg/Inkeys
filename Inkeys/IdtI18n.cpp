@@ -1,8 +1,8 @@
-﻿import Inkeys.Other.Json;
-import Inkeys.Conv.Text;
-
-#include "IdtI18n.h"
+﻿#include "IdtI18n.h"
 #include <filesystem>
+
+import Inkeys.Other.Json;
+import Inkeys.Conv.Text;
 
 namespace
 {

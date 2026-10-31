@@ -18,21 +18,6 @@
 // PptInfoStateBuffer 变量是 PptInfoState 变量的缓冲，当 DrawpadDrawing 函数加载完成 PPT 的画板后，缓冲变量中的值才会变为和 PptInfoState 一致。
 // 一些函数获取 PptInfoStateBuffer 的值，必须要等到 PPT 画板初始化完毕后才会有所改变，并再做出反应。
 
-import Inkeys.Conv.Color;
-import Inkeys.Helper.Thread;
-import Inkeys.Load;
-import Inkeys.Message;
-import Inkeys.Other.Inputs;
-import Inkeys.Conv.Text;
-import Inkeys.UI.Bar;
-import Inkeys.UI.Ppt;
-import Inkeys.UI.MessageBox;
-import Inkeys.UI.Setting;
-import Inkeys.UI.Freeze;
-import Inkeys.Other.Config;
-import Inkeys.Window;
-import Inkeys.Startup.Progress;
-
 #include "IdtPlug-in.h"
 #include "Inkeys/UI/Ppt/Ppt.Recovery.h"
 
@@ -66,6 +51,21 @@ import Inkeys.Startup.Progress;
 #include <deque>
 #pragma comment(lib, "shlwapi.lib")
 #pragma comment(lib, "shell32.lib")
+
+import Inkeys.Conv.Color;
+import Inkeys.Helper.Thread;
+import Inkeys.Load;
+import Inkeys.Message;
+import Inkeys.Other.Inputs;
+import Inkeys.Conv.Text;
+import Inkeys.UI.Bar;
+import Inkeys.UI.Ppt;
+import Inkeys.UI.MessageBox;
+import Inkeys.UI.Setting;
+import Inkeys.UI.Freeze;
+import Inkeys.Other.Config;
+import Inkeys.Window;
+import Inkeys.Startup.Progress;
 
 namespace
 {

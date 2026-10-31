@@ -1,5 +1,3 @@
-import Inkeys.Helper.CrashHandler;
-
 #ifndef NOMINMAX
 #define NOMINMAX
 #endif
@@ -22,6 +20,8 @@ import Inkeys.Helper.CrashHandler;
 #include <thread>
 #include <utility>
 #include <vector>
+
+import Inkeys.Helper.CrashHandler;
 
 #pragma comment(lib, "Shell32.lib")
 

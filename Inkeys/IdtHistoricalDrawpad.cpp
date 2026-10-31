@@ -1,6 +1,4 @@
-﻿import Inkeys.Conv.Text;
-
-#include "IdtHistoricalDrawpad.h"
+﻿#include "IdtHistoricalDrawpad.h"
 
 #include "IdtConfiguration.h"
 #include "IdtDraw.h"
@@ -11,6 +9,8 @@
 #include "IdtState.h"
 #include "IdtTime.h"
 #include "Inkeys/Window/Window.Legacy.hpp"
+
+import Inkeys.Conv.Text;
 
 void removeEmptyFolders(wstring path)
 {

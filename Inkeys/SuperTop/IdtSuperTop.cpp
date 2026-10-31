@@ -1,8 +1,4 @@
-﻿import Inkeys.Conv.Text;
-import Inkeys.Text.Split;
-import Inkeys.UI.MessageBox;
-
-#include "IdtSuperTop.h"
+﻿#include "IdtSuperTop.h"
 
 #include "../IdtConfiguration.h"
 #include "../IdtOther.h"
@@ -16,6 +12,10 @@ import Inkeys.UI.MessageBox;
 #ifdef MessageBox
 #undef MessageBox
 #endif
+
+import Inkeys.Conv.Text;
+import Inkeys.Text.Split;
+import Inkeys.UI.MessageBox;
 
 #define try_win32(x) if(!(x)) [[unlikely]] throw_win32_error();
 void throw_win32_error()

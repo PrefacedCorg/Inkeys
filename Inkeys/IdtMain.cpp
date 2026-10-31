@@ -11,34 +11,6 @@
  * @email		alan-crl@foxmail.com
 */
 
-import Inkeys.Helper.CrashHandler;
-import Inkeys.UI.Setting;
-import Inkeys.UI.Bar;
-import Inkeys.UI.Ppt;
-import Inkeys.UI.PageControl;
-import Inkeys.UI.Whiteboard;
-import Inkeys.UI.RenderPipeline;
-import Inkeys.Helper.Thread;
-import Inkeys.Net.Update;
-import Inkeys.Load;
-import Inkeys.Other.Gesture;
-import Inkeys.Conv.Text;
-import Inkeys.Text.Split;
-import Inkeys.Text.Font;
-import Inkeys.Other.Config;
-import Inkeys.Message;
-import Inkeys.Window;
-import Inkeys.Display;
-import Inkeys.UI.MessageBox;
-import Inkeys.UI.StartupPreview;
-import Inkeys.Startup.Progress;
-import Inkeys.Drawing.Draw3.diagnostics;
-import Inkeys.Drawing.Draw3.drawing_controller;
-import Inkeys.Drawing.Draw3.graphics_initialization;
-import Inkeys.Drawing.Draw3.renderer;
-import Inkeys.Drawing.Draw3.ink_prediction;
-import Inkeys.Drawing.Draw3.transparent_presentation;
-
 #include "IdtMain.h"
 #include "Inkeys/Drawing/Draw3/Draw3.DiagnosticOutput.h"
 #include "Inkeys/Drawing/Draw3/Draw3.PptTiming.h"
@@ -92,6 +64,34 @@ import Inkeys.Drawing.Draw3.transparent_presentation;
 #ifdef MessageBox
 #undef MessageBox
 #endif
+
+import Inkeys.Helper.CrashHandler;
+import Inkeys.UI.Setting;
+import Inkeys.UI.Bar;
+import Inkeys.UI.Ppt;
+import Inkeys.UI.PageControl;
+import Inkeys.UI.Whiteboard;
+import Inkeys.UI.RenderPipeline;
+import Inkeys.Helper.Thread;
+import Inkeys.Net.Update;
+import Inkeys.Load;
+import Inkeys.Other.Gesture;
+import Inkeys.Conv.Text;
+import Inkeys.Text.Split;
+import Inkeys.Text.Font;
+import Inkeys.Other.Config;
+import Inkeys.Message;
+import Inkeys.Window;
+import Inkeys.Display;
+import Inkeys.UI.MessageBox;
+import Inkeys.UI.StartupPreview;
+import Inkeys.Startup.Progress;
+import Inkeys.Drawing.Draw3.diagnostics;
+import Inkeys.Drawing.Draw3.drawing_controller;
+import Inkeys.Drawing.Draw3.graphics_initialization;
+import Inkeys.Drawing.Draw3.renderer;
+import Inkeys.Drawing.Draw3.ink_prediction;
+import Inkeys.Drawing.Draw3.transparent_presentation;
 
 wstring buildTime = __DATE__ L" " __TIME__;		// 构建时间
 wstring editionVersion = L"3.0.0-dev.12111";	// 程序发布版本
